@@ -1,0 +1,14 @@
+<resources>
+    <string name="app_name">Practica1</string>
+    <string name="action_settings">Settings</string>
+    <string name="add_card">Añadir una nueva card</string>
+    <string name="card_btn_ver">Ver en Wikipedia</string>
+    <string name="messi">Lionel Andres Messi</string>
+    <string name="txt_messi">Mejor jugador de la historia del futbol, galardonado con 7 balones de oro</string>
+    <string name="cr7">Cristiano Ronaldo</string>
+    <string name="txt_cr7">Máximo goleador de la historia del futbol, galardonado con 5 balones de oro</string>
+    <string name="maradona">Maradona</string>
+    <string name="txt_maradona">El que para muchos fué y sigue siendo el mejor de la historia, el solo gano un mundial para Argentina</string>
+    <string name="gaya">Jose Luis Gayá</string>
+    <string name="txt_gaya">Mejor jugador del mundo actualmente, próximo ganador del balon de oro</string>
+</resources>

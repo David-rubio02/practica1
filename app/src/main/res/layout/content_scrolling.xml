@@ -1,0 +1,271 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.core.widget.NestedScrollView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    app:layout_behavior="@string/appbar_scrolling_view_behavior"
+    tools:showIn="@layout/activity_scrolling"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ScrollingActivity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="?attr/actionBarSize"
+        android:orientation="vertical">
+
+        <com.google.android.material.card.MaterialCardView
+            android:id="@+id/cvAd"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/common_margin_min"
+            android:layout_marginStart="@dimen/common_margin_min"
+            android:layout_marginEnd="@dimen/common_margin_min"
+            android:visibility="visible"
+            android:clickable="true"
+            android:focusable="true">
+
+            <androidx.constraintlayout.widget.ConstraintLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:paddingTop="@dimen/common_padding_default"
+                android:paddingStart="@dimen/common_padding_default"
+                android:paddingEnd="@dimen/common_padding_default">
+
+                <ImageView
+                    android:id="@+id/imgCard"
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/card_img_size"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    android:importantForAccessibility="no"
+                    android:src="@mipmap/ic_launcher" />
+
+                <com.google.android.material.button.MaterialButton
+                    android:id="@+id/btnBuy"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/card_btn_ver"
+                    app:icon="@drawable/ic_ojo"
+                    app:layout_constraintStart_toStartOf="@id/texto"
+                    app:layout_constraintTop_toBottomOf="@+id/texto" />
+
+                <TextView
+                    android:id="@+id/tvTitle"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:text="@string/messi"
+                    app:layout_constraintStart_toStartOf="@id/imgCard"
+                    app:layout_constraintEnd_toEndOf="@id/imgCard"
+                    app:layout_constraintTop_toBottomOf="@id/imgCard"
+                    android:layout_marginStart="@dimen/common_padding_default"
+                    android:textAppearance="?attr/textAppearanceHeadline5" />
+
+                <TextView
+                    android:id="@+id/texto"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:text="@string/txt_messi"
+                    android:textAppearance="?attr/textAppearanceBody1"
+                    android:maxLines="3"
+                    android:ellipsize="end"
+                    app:layout_constraintStart_toStartOf="@id/tvTitle"
+                    app:layout_constraintEnd_toEndOf="@id/tvTitle"
+                    app:layout_constraintTop_toBottomOf="@id/tvTitle"/>
+            </androidx.constraintlayout.widget.ConstraintLayout>
+
+        </com.google.android.material.card.MaterialCardView>
+
+        <com.google.android.material.card.MaterialCardView
+            android:id="@+id/cvAd2"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/common_margin_min"
+            android:layout_marginStart="@dimen/common_margin_min"
+            android:layout_marginEnd="@dimen/common_margin_min"
+            android:visibility="visible"
+            android:clickable="true"
+            android:focusable="true">
+
+            <androidx.constraintlayout.widget.ConstraintLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:paddingTop="@dimen/common_padding_default"
+                android:paddingStart="@dimen/common_padding_default"
+                android:paddingEnd="@dimen/common_padding_default">
+
+                <ImageView
+                    android:id="@+id/imgCard2"
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/card_img_size"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    android:importantForAccessibility="no"
+                    android:src="@mipmap/ic_launcher" />
+
+                <com.google.android.material.button.MaterialButton
+                    android:id="@+id/btnBuy2"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/card_btn_ver"
+                    app:icon="@drawable/ic_ojo"
+                    app:layout_constraintStart_toStartOf="@id/texto2"
+                    app:layout_constraintTop_toBottomOf="@+id/texto2" />
+
+                <TextView
+                    android:id="@+id/tvTitle2"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:text="@string/cr7"
+                    app:layout_constraintStart_toStartOf="@id/imgCard2"
+                    app:layout_constraintEnd_toEndOf="@id/imgCard2"
+                    app:layout_constraintTop_toBottomOf="@id/imgCard2"
+                    android:layout_marginStart="@dimen/common_padding_default"
+                    android:textAppearance="?attr/textAppearanceHeadline5" />
+
+                <TextView
+                    android:id="@+id/texto2"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:text="@string/txt_cr7"
+                    android:textAppearance="?attr/textAppearanceBody1"
+                    android:maxLines="3"
+                    android:ellipsize="end"
+                    app:layout_constraintStart_toStartOf="@id/tvTitle2"
+                    app:layout_constraintEnd_toEndOf="@id/tvTitle2"
+                    app:layout_constraintTop_toBottomOf="@id/tvTitle2"/>
+            </androidx.constraintlayout.widget.ConstraintLayout>
+
+        </com.google.android.material.card.MaterialCardView>
+
+        <com.google.android.material.card.MaterialCardView
+            android:id="@+id/cvAd3"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/common_margin_min"
+            android:layout_marginStart="@dimen/common_margin_min"
+            android:layout_marginEnd="@dimen/common_margin_min"
+            android:visibility="visible"
+            android:clickable="true"
+            android:focusable="true">
+
+            <androidx.constraintlayout.widget.ConstraintLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:paddingTop="@dimen/common_padding_default"
+                android:paddingStart="@dimen/common_padding_default"
+                android:paddingEnd="@dimen/common_padding_default">
+
+                <ImageView
+                    android:id="@+id/imgCard3"
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/card_img_size"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    android:importantForAccessibility="no"
+                    android:src="@mipmap/ic_launcher" />
+
+                <com.google.android.material.button.MaterialButton
+                    android:id="@+id/btnBuy3"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/card_btn_ver"
+                    app:icon="@drawable/ic_ojo"
+                    app:layout_constraintStart_toStartOf="@id/texto3"
+                    app:layout_constraintTop_toBottomOf="@+id/texto3" />
+
+                <TextView
+                    android:id="@+id/tvTitle3"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:text="@string/maradona"
+                    app:layout_constraintStart_toStartOf="@id/imgCard3"
+                    app:layout_constraintEnd_toEndOf="@id/imgCard3"
+                    app:layout_constraintTop_toBottomOf="@id/imgCard3"
+                    android:layout_marginStart="@dimen/common_padding_default"
+                    android:textAppearance="?attr/textAppearanceHeadline5" />
+
+                <TextView
+                    android:id="@+id/texto3"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:text="@string/txt_maradona"
+                    android:textAppearance="?attr/textAppearanceBody1"
+                    android:maxLines="3"
+                    android:ellipsize="end"
+                    app:layout_constraintStart_toStartOf="@id/tvTitle3"
+                    app:layout_constraintEnd_toEndOf="@id/tvTitle3"
+                    app:layout_constraintTop_toBottomOf="@id/tvTitle3"/>
+            </androidx.constraintlayout.widget.ConstraintLayout>
+
+        </com.google.android.material.card.MaterialCardView>
+
+        <com.google.android.material.card.MaterialCardView
+            android:id="@+id/cvAd4"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/common_margin_min"
+            android:layout_marginStart="@dimen/common_margin_min"
+            android:layout_marginEnd="@dimen/common_margin_min"
+            android:visibility="visible"
+            android:clickable="true"
+            android:focusable="true">
+
+            <androidx.constraintlayout.widget.ConstraintLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:paddingTop="@dimen/common_padding_default"
+                android:paddingStart="@dimen/common_padding_default"
+                android:paddingEnd="@dimen/common_padding_default">
+
+                <ImageView
+                    android:id="@+id/imgCard4"
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/card_img_size"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    android:importantForAccessibility="no"
+                    android:src="@mipmap/ic_launcher" />
+
+                <com.google.android.material.button.MaterialButton
+                    android:id="@+id/btnBuy4"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/card_btn_ver"
+                    app:icon="@drawable/ic_ojo"
+                    app:layout_constraintStart_toStartOf="@id/texto4"
+                    app:layout_constraintTop_toBottomOf="@+id/texto4" />
+
+                <TextView
+                    android:id="@+id/tvTitle4"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:text="@string/gaya"
+                    app:layout_constraintStart_toStartOf="@id/imgCard4"
+                    app:layout_constraintEnd_toEndOf="@id/imgCard4"
+                    app:layout_constraintTop_toBottomOf="@id/imgCard4"
+                    android:layout_marginStart="@dimen/common_padding_default"
+                    android:textAppearance="?attr/textAppearanceHeadline5" />
+
+                <TextView
+                    android:id="@+id/texto4"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:text="@string/txt_gaya"
+                    android:textAppearance="?attr/textAppearanceBody1"
+                    android:maxLines="3"
+                    android:ellipsize="end"
+                    app:layout_constraintStart_toStartOf="@id/tvTitle4"
+                    app:layout_constraintEnd_toEndOf="@id/tvTitle4"
+                    app:layout_constraintTop_toBottomOf="@id/tvTitle4"/>
+            </androidx.constraintlayout.widget.ConstraintLayout>
+
+        </com.google.android.material.card.MaterialCardView>
+
+    </LinearLayout>
+</androidx.core.widget.NestedScrollView>
