@@ -20,8 +20,6 @@ private lateinit var binding: ActivityScrollingBinding
         binding = ActivityScrollingBinding.inflate(layoutInflater)
         setContentView(binding.root)
 
-        //loadImage()
-
         binding.content.btnBuy.setOnClickListener {
             startActivity(Intent(Intent.ACTION_VIEW, Uri.parse("https://es.wikipedia.org/wiki/Lionel_Messi")))
         }
@@ -44,7 +42,7 @@ private lateinit var binding: ActivityScrollingBinding
         loadImageGaya()
     }
 
-    private fun loadImageMessi(url: String = "") {
+    private fun loadImageMessi(url: String = "https://upload.wikimedia.org/wikipedia/commons/thumb/c/c1/Lionel_Messi_20180626.jpg/245px-Lionel_Messi_20180626.jpg") {
         Glide.with(this)
             .load(url)
             .diskCacheStrategy(DiskCacheStrategy.ALL)
@@ -52,28 +50,28 @@ private lateinit var binding: ActivityScrollingBinding
             .into(binding.content.imgCard)
     }
 
-    private fun loadImageCris(url: String = "") {
+    private fun loadImageCris(url: String = "https://upload.wikimedia.org/wikipedia/commons/thumb/8/8c/Cristiano_Ronaldo_2018.jpg/245px-Cristiano_Ronaldo_2018.jpg") {
         Glide.with(this)
             .load(url)
             .diskCacheStrategy(DiskCacheStrategy.ALL)
             .centerCrop()
-            .into(binding.content.imgCard)
+            .into(binding.content.imgCard2)
     }
 
-    private fun loadImageMaradona(url: String = "") {
+    private fun loadImageMaradona(url: String = "https://upload.wikimedia.org/wikipedia/commons/thumb/2/2c/Maradona-Mundial_86_con_la_copa.JPG/272px-Maradona-Mundial_86_con_la_copa.JPG") {
         Glide.with(this)
             .load(url)
             .diskCacheStrategy(DiskCacheStrategy.ALL)
             .centerCrop()
-            .into(binding.content.imgCard)
+            .into(binding.content.imgCard3)
     }
 
-    private fun loadImageGaya(url: String = "") {
+    private fun loadImageGaya(url: String = "https://upload.wikimedia.org/wikipedia/commons/thumb/c/c2/Jose_Gaya_2015_%28cropped%29.jpg/245px-Jose_Gaya_2015_%28cropped%29.jpg") {
         Glide.with(this)
             .load(url)
             .diskCacheStrategy(DiskCacheStrategy.ALL)
             .centerCrop()
-            .into(binding.content.imgCard)
+            .into(binding.content.imgCard4)
     }
 
     override fun onCreateOptionsMenu(menu: Menu): Boolean {
